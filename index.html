@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        html{
+            background-color: black;
+        }
+        body{
+            margin:0;
+        }
+        canvas{
+            background-color: #333333;
+        }
+        .ork{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width:70px;
+        }
+        #aya{
+            padding:2px 0;
+            border:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="ork">
+        <input onclick="Relod();"value="Reset" type="button">
+        <input type="color">
+        <input id="aya" type="number" value="10">
+        <a id="dl" download="Canvas.png" href="#"><input type="button" value="pobirz"></a>
+        <input type="button" value="Rollo" onclick="Roll();">
+    </div>
+    <canvas></canvas>
+    
+<script src="script.js"></script>
+</body>
+</html>
