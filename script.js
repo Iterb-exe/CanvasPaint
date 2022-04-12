@@ -4,6 +4,10 @@ const zydziu = document.querySelector("input[type='color']")
 const ay = document.getElementById("aya")
 canvas.height=window.innerHeight-4;
 canvas.width=window.innerWidth;
+addEventListener('resize',()=>{
+    canvas.height=window.innerHeight-4;
+    canvas.width=window.innerWidth;
+});
 const divek = document.querySelector(".ork")
 document.getElementById("dl").addEventListener('click', dlCanvas, false);
 divek.style.top="-87px"
